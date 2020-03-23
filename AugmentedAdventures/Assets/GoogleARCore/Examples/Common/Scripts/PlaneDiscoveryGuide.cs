@@ -71,10 +71,14 @@ namespace GoogleARCore.Examples.Common
         [SerializeField] private GameObject m_FeaturePoints = null;
 
         /// <summary>
-        /// The RawImage that provides rotating hand animation.
+        /// The Text that provides text displaying about finding surface.
         /// </summary>
-        [Tooltip("The RawImage that provides rotating hand animation.")]
-        [SerializeField] private RawImage m_HandAnimation = null;
+        [Tooltip("The Text that provides information about finding surface.")]
+        [SerializeField] private Text m_FindingText = null;
+
+        [Tooltip("The text that displays info about placing objects")]
+        [SerializeField] private Text m_TapText = null;
+
 
         /// <summary>
         /// The snackbar Game Object.
@@ -169,7 +173,9 @@ namespace GoogleARCore.Examples.Common
 
             enabled = false;
             m_FeaturePoints.SetActive(false);
-            m_HandAnimation.enabled = false;
+            
+            
+            m_FindingText.enabled = false;
             m_SnackBar.SetActive(false);
         }
 
@@ -217,8 +223,10 @@ namespace GoogleARCore.Examples.Common
             {
                 // The session has lost tracking.
                 m_FeaturePoints.SetActive(false);
-                m_HandAnimation.enabled = false;
+                m_FindingText.enabled = false;
+                m_TapText.enabled = true;
                 m_SnackBar.SetActive(true);
+
                 switch (Session.LostTrackingReason)
                 {
                     case LostTrackingReason.InsufficientLight:
@@ -256,13 +264,14 @@ namespace GoogleARCore.Examples.Common
                 // 'DisplayGuideDelay'.
                 m_FeaturePoints.SetActive(true);
 
-                if (!m_HandAnimation.enabled)
+                if (!m_FindingText.enabled)
                 {
-                    m_HandAnimation.GetComponent<CanvasRenderer>().SetAlpha(0f);
-                    m_HandAnimation.CrossFadeAlpha(1f, k_AnimationFadeDuration, false);
+                    m_FindingText.GetComponent<CanvasRenderer>().SetAlpha(0f);
+                    m_FindingText.CrossFadeAlpha(1f, k_AnimationFadeDuration, false);
                 }
 
-                m_HandAnimation.enabled = true;
+                m_FindingText.enabled = true;
+                m_TapText.enabled = false;
                 m_SnackBar.SetActive(true);
 
                 if (m_NotDetectedPlaneElapsed > OfferDetailedInstructionsDelay)
@@ -285,13 +294,14 @@ namespace GoogleARCore.Examples.Common
                 m_SnackBar.SetActive(false);
                 m_OpenButton.SetActive(false);
 
-                if (m_HandAnimation.enabled)
+                if (m_FindingText.enabled)
                 {
-                    m_HandAnimation.GetComponent<CanvasRenderer>().SetAlpha(1f);
-                    m_HandAnimation.CrossFadeAlpha(0f, k_AnimationFadeDuration, false);
+                    m_FindingText.GetComponent<CanvasRenderer>().SetAlpha(1f);
+                    m_FindingText.CrossFadeAlpha(0f, k_AnimationFadeDuration, false);
                 }
 
-                m_HandAnimation.enabled = false;
+                m_FindingText.enabled = false;
+                m_TapText.enabled = false;
             }
         }
 
@@ -329,9 +339,14 @@ namespace GoogleARCore.Examples.Common
                 Debug.LogError("OpenButton does not have a Button Component.");
             }
 
-            if (m_HandAnimation == null)
+            if (m_FindingText == null)
             {
-                Debug.LogError("HandAnimation is null");
+                Debug.LogError("FindingText is null");
+            }
+
+            if (m_TapText == null)
+            {
+                Debug.LogError("TapText is Null");
             }
 
             if (m_FeaturePoints == null)
