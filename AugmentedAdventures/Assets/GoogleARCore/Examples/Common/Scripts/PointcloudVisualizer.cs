@@ -58,7 +58,7 @@ namespace GoogleARCore.Examples.Common
         /// The maximum number of points to show on the screen.
         /// </summary>
         [Tooltip("The maximum number of points to show on the screen.")]
-        [SerializeField] private int m_MaxPointCount = 1000;
+        [SerializeField] private int m_MaxPointCount = 1;
 
         /// <summary>
         /// The default size of the points.
