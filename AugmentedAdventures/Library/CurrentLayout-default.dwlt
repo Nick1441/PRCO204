@@ -113,10 +113,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 608, y: 492}
-  m_MaxSize: {x: 18003, y: 14042}
+  m_MinSize: {x: 609, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 57
+  controlID: 108
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 58
+  controlID: 109
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,8 +244,8 @@ MonoBehaviour:
     y: 0
     width: 575
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -371,23 +371,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 9ea8ffffb6b0ffff68b3ffffa4d1ffff3ceeffffaef9ffff54fbffff4e390000a8550000b2550000
+      m_SelectedIDs: d23c0000
+      m_LastClickedID: 15570
+      m_ExpandedIDs: 8cfaffffccfaffffd8faffff70fbffffa037000000380000843c0000ac3c0000e43c00004c3d0000643d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Options
-        m_OriginalName: Options
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -10292
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 6}
       m_SearchString: 
@@ -433,9 +433,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 347.4314, y: 368.75418, z: -598.2409}
+    m_Target: {x: 311.81097, y: 475.25372, z: 5.969116}
     speed: 2
-    m_Value: {x: 347.4314, y: 368.75418, z: -598.2409}
+    m_Value: {x: 311.81097, y: 475.25372, z: 5.969116}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -481,13 +481,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.016172698, y: -0.045880858, z: -0.000742919, w: -0.9988191}
+    m_Target: {x: 0.034182176, y: -0.009896927, z: -0.0003386103, w: -0.99937016}
     speed: 2
-    m_Value: {x: 0.016171511, y: -0.04737888, z: -0.00076717464, w: -0.99874586}
+    m_Value: {x: 0.034182053, y: -0.009896891, z: -0.00033860907, w: -0.9993666}
   m_Size:
-    m_Target: 92.44018
+    m_Target: 668.4629
     speed: 2
-    m_Value: 96.796
+    m_Value: 668.4629
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -577,20 +577,20 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/External Assets/FauryTaleWoodenGUI
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/External Assets/FauryTaleWoodenGUI
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Dom\Documents\GitHub\PRCO204\AugmentedAdventures
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 111}
-    m_SelectedIDs: 0e3b0000
-    m_LastClickedID: 15118
-    m_ExpandedIDs: 000000004c3800004e3800005038000052380000543800005638000058380000a23a00000e3b00001a3b000000ca9a3b
+    scrollPos: {x: 0, y: 47}
+    m_SelectedIDs: 06390000
+    m_LastClickedID: 14598
+    m_ExpandedIDs: 0000000006390000083900000a3900000c3900000e390000103900001239000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -618,7 +618,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004c3800004e3800005038000052380000543800005638000058380000
+    m_ExpandedIDs: 0000000006390000083900000a3900000c3900000e3900001039000012390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
